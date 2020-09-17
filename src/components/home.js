@@ -21,7 +21,7 @@ function home()
          
     }).catch((err)=>
     {
-       setShorturl("Some error Occured please take a break");
+       setShorturl("Some error Occured please check internet connnectiion");
      
     });
 
