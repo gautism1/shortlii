@@ -14,7 +14,7 @@ function home()
       "longurl":longurl
     } 
 
-    axios.post('http://localhost:5000/shorten', completequery).then((data)=>
+    axios.post('https://shortliiibackend.herokuapp.com/shorten', completequery).then((data)=>
     {    
          console.log(data.data.shorturl)
          setShorturl(data.data.shorturl)
