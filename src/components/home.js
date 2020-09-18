@@ -13,14 +13,15 @@ function home()
     const completequery={
       "longurl":longurl
     } 
-
-    axios.post('https://shortliiibackend.herokuapp.com/shorten', completequery).then((data)=>
+console.log("lkjhjkkl",completequery);
+    axios.post('https://shortliiibackend.herokuapp.com/shorten',completequery).then((data)=>
     {    
          console.log(data.data.shorturl)
          setShorturl(data.data.shorturl)
          
     }).catch((err)=>
     {
+
        setShorturl("Some error Occured please check internet connnectiion");
      
     });
